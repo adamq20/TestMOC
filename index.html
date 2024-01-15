@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registrasi</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registrasi</h2>
+        <form id="registrationForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Nomor HP:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="province">Provinsi:</label>
+            <input type="text" id="province" required>
+
+            <label for="city">Kabupaten/Kota:</label>
+            <input type="text" id="city" required>
+
+            <label for="district">Kecamatan:</label>
+            <input type="text" id="district" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <button type="button" onclick="validateAndSendOTP()">Kirim OTP</button>
+
+            <div id="verificationContainer" class="hidden">
+                <label for="otp">OTP:</label>
+                <input type="text" id="otp" required>
+                <button type="button" onclick="verifyOTP()">Verifikasi</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
